@@ -42,10 +42,16 @@ Define a reviewable requirement schema and curate 24 programs across eight subje
 - code in `src/data/programs/` and `scripts/validate-program-catalog.ts`
 - [x] Verify it: `/check verify program requirement catalog`
 
-### 2. Constraint graph and route repair · planned · needs a decision · Beta
+### 2. Constraint graph and route repair · in-progress · Beta
 Represent profile facts, program requirements, tasks, timing, and costs as explicit constraints. Compute eligibility and route feasibility bands, the critical path, breakages, deterministic ranking, and the smallest useful repair without predicting admission probability.
 **Done when:** the same inputs always produce the same diagnosis and order; changing an important variable propagates through dependencies, removes infeasible programs, and returns a valid repaired route when one exists.
-- [x] Design it (assumed spec): [0006](../specs/0006-constraint-graph-engine-assumed.md)
+- [x] Design it (spec): [0006](../specs/0006-constraint-graph-engine-assumed.md)
+- [ ] Build it: `/develop constraint graph and route repair`
+  - [ ] Define versioned policy schemas, outcome truth tables, graph records, stable identifiers, and deterministic issue handling (AC-1, AC-2, AC-3, AC-4, AC-5, AC-10, AC-12, AC-14)
+  - [ ] Implement baseline route evaluation, supported deadline and cost feasibility, critical path, and traceable result output (AC-1, AC-2, AC-3, AC-8, AC-11)
+  - [ ] Implement IELTS score and timing shocks, dependency diffing, finite repair candidates, and ranked next actions (AC-6, AC-7, AC-8, AC-9, AC-10)
+  - [ ] Add reducer integration and unit and browser coverage for privacy, invalid input, deterministic ordering, and accessibility (AC-7, AC-12, AC-13, AC-14)
+- [ ] Verify it: `/check verify constraint graph and route repair`
 
 ### 3. Product shell and visual language · planned · needs a decision
 Create the coherent private alpha frame and reusable visual language for profile input, program cards, status, tasks, and dependency states. Make every graph state understandable without relying on color or the graph alone.
