@@ -1,7 +1,7 @@
 # 0005. Diagnosis and recommendations
 
 **Date**: 2026-09-19
-**Status**: Proposed
+**Status**: In Progress
 
 ## Summary
 

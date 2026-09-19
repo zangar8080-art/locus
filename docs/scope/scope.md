@@ -78,6 +78,7 @@ Turn the profile into a plain language diagnosis and at least three ranked progr
   - [ ] Build the diagnosis workspace with findings, recommendations, shortage states, evidence disclosure, and active route selection (AC-7, AC-8, AC-9, AC-10, AC-15)
   - [ ] Add deterministic, traceability, currency, stale result, invalid configuration, keyboard, and responsive coverage (AC-1, AC-4, AC-6, AC-8, AC-11, AC-12, AC-13, AC-15)
 - [ ] Verify it: `/check verify diagnosis and recommendations`
+- code in `src/domain/diagnosis.ts`, `app/page.tsx`, and `app/globals.css`
 
 ### 6. Shock and repair lab · planned · needs a decision · Beta
 Deliver the magic moment on the same workspace. Let the applicant perturb IELTS score or exam timing, watch affected dependencies and programs change, and see a repaired route with one immediate action.
